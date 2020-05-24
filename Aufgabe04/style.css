@@ -156,16 +156,20 @@ nav img:hover{
     background-color: #C5977D;
 }
 
-h5 ~ p{
-    font-size: 25px;
+.about p{
+
+    padding-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.Impressum{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #102629;
-    color: #e9d8cc;
+i{
+    font-size: 20px;
 }
+
+
 
 
 
