@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #DAD1C1;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background: #102629;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+.logo img{
+    max-width: 40%;
+    float: left;
+    margin-top: -10px;
+}
+ 
+nav{
+    float: right;
+    line-height: 100px;
+    color: ivory;
+    font-size: 22px;
+    padding-right: 100px;
+}
+
+nav>a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 100%;
+    margin: 0;
+    color: #e9d8cc;
+}
+
+nav a:hover{
+    font-size: 105%;
+    color: #DCA287;
+}
+
+img[alt=warenkorb]{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 200px;
+    margin-right: 0;
+    width: 30px;
+}
+
+nav img:hover{
+    width: 35px;
+}
