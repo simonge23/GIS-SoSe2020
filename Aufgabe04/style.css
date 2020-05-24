@@ -60,3 +60,98 @@ img[alt=warenkorb]{
 nav img:hover{
     width: 35px;
 }
+
+.banner{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(^^^^^^^^^^^^^);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner h2{
+    margin-top: 150px;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 250%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #e9d8cc;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #e9d8cc;
+}
+
+.inhalt{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #e9d8cc;
+    
+}
+
+.inhalt h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    font-size: 22px;
+}
+
+.inhalt * img{
+    width: 50%;
+    position: relative;
+    
+}
+
+.containerSynthesizer{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.containerDrummachines{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+
+.Produkt{
+
+    text-align: center;
+    width: 30%;
+    padding: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-color: #e9d8cc;
+    border-width: 5px;
+
+
+}
+.Produkt p{
+    font-style: italic;
+}
+
+.addbutton {
+    
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e9d8cc;
+    color: #102629;
+    border: none;
+    text-decoration: none;
+    padding: 1.5%;
+}
+
+.addbutton:hover{
+    background-color: #C5977D;
+}
