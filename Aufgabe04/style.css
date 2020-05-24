@@ -4,7 +4,7 @@
 }
 body{
     text-align: center;
-    background-color: #DAD1C1;
+    background-color: rgb(0, 0, 0);
 }
 
 .wrapper{
@@ -15,7 +15,7 @@ body{
 
 header{
     height: 100px;
-    background: #102629;
+    background: #3a3a3a;
     width: 100%;
     z-index: 999;
     position: fixed;
@@ -46,13 +46,13 @@ nav>a{
 
 nav a:hover{
     font-size: 105%;
-    color: #DCA287;
+    color: rgb(241, 148, 125);
 }
 
 img[alt=warenkorb]{
     position: absolute;
     margin-top: -65px;
-    margin-left: 200px;
+    margin-left: 230px;
     margin-right: 0;
     width: 30px;
 }
