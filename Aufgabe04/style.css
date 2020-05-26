@@ -182,7 +182,7 @@ i{
 
     header{
         height: 100px;
-        background: #102629;
+        background: #3a3a3a;
         width: 100%;
         z-index: 999;
         position: fixed;
@@ -198,7 +198,7 @@ i{
         
     }
 
-    img[alt=shoppingbag]{
+    img[alt=warenkorb]{
         position: absolute;
         padding-top: 10px;
         padding-right: 0px;
@@ -217,7 +217,6 @@ i{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-transform: uppercase;
         color: #e9d8cc;
-        border-style: solid;
         border-width: 10px;
         border-color: #e9d8cc;
     }
