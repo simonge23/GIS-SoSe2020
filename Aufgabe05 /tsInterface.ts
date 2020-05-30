@@ -12,7 +12,7 @@ let artikel2: ArtikelSynthesizer = { img: "lead4.jpg", name: "Clavia Nord Lead 4
 let artikel3: ArtikelSynthesizer = { img: "matriarch.jpg", name: "Moog Matriarch", beschreibung: "4-stimmig Paraphoner Semi-Modularer Synthesizer", preis: "2.199,00€" };
 let artikel4: ArtikelSynthesizer = { img: "microkorg.jpg", name: "Korg Microkorg", beschreibung: "Analoger Modeling Synth/Vocoder", preis: "339,00€" };
 let artikel5: ArtikelSynthesizer = { img: "minibrute.jpg", name: "Arturia Minibrute Bundle", beschreibung: "Analoger semi-modularer Synthesizer", preis: "815,00€" };
-let artikel6: ArtikelSynthesizer = { img: "minilogue.png", name: "Korg Minilogue XD", beschreibung: "Hybrider Synthesizer", preis: "569,00€" };
+let artikel6: ArtikelSynthesizer = { img: "minilogue.jpg", name: "Korg Minilogue XD", beschreibung: "Hybrider Synthesizer", preis: "569,00€" };
 
 
 //Artikel Synthesizer Array
@@ -28,11 +28,11 @@ interface ArtikelDrummachines {
 
 //Artikel Drummachines
 let artikel7: ArtikelDrummachines = { img: "digitakt.jpg", name: "Elektron Digitakt", beschreibung: "Digital Drummachine", preis: "699,00€" };
-let artikel8: ArtikelDrummachines = { img: "drumbrute.png", name: "Arturia Drumbrute", beschreibung: "Analog Drummachine", preis: "349,00€" };
-let artikel9: ArtikelDrummachines = { img: "jomoxalphabase.png", name: "Jomox Alpha Base", beschreibung: "Analoger Drum Synthesizer", preis: "1.699,00€" };
-let artikel10: ArtikelDrummachines = { img: "mc101.png", name: "Roland MC101", beschreibung: "Portable Groovebox", preis: "449,00€" };
-let artikel11: ArtikelDrummachines = { img: "mfbtanzbär2.png", name: "MFB Tanzbär 2", beschreibung: "nalog / Digital Hybrid Drum Computer", preis: "979,00€" };
-let artikel12: ArtikelDrummachines = { img: "rd8.png", name: "Behringer RD8", beschreibung: "Analoge Drummachine", preis: "319,00€" };
+let artikel8: ArtikelDrummachines = { img: "drumbrute.jpg", name: "Arturia Drumbrute", beschreibung: "Analog Drummachine", preis: "349,00€" };
+let artikel9: ArtikelDrummachines = { img: "jomoxalphabase.jpg", name: "Jomox Alpha Base", beschreibung: "Analoger Drum Synthesizer", preis: "1.699,00€" };
+let artikel10: ArtikelDrummachines = { img: "mc101.jpg", name: "Roland MC101", beschreibung: "Portable Groovebox", preis: "449,00€" };
+let artikel11: ArtikelDrummachines = { img: "mfbtanzbär2.jpg", name: "MFB Tanzbär 2", beschreibung: "nalog / Digital Hybrid Drum Computer", preis: "979,00€" };
+let artikel12: ArtikelDrummachines = { img: "rd8.jpg", name: "Behringer RD8", beschreibung: "Analoge Drummachine", preis: "319,00€" };
 
 //Artikel Drummachines Array
 let artikelDrummachines: ArtikelDrummachines[] = [artikel7, artikel8, artikel9, artikel10, artikel11, artikel12];
