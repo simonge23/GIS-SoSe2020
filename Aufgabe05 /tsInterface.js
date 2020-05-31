@@ -22,6 +22,7 @@ for (let index = 0; index < artikelSynthesizer.length; index++) {
     //DIV
     let newDiv = document.createElement("div");
     newDiv.id = "div1" + index;
+    newDiv.className = "Produkt";
     document.getElementById("allsynth")?.appendChild(newDiv);
     //IMG
     let imgElement = document.createElement("img");
@@ -31,7 +32,7 @@ for (let index = 0; index < artikelSynthesizer.length; index++) {
     let name = document.createElement("p");
     name.innerHTML = artikelSynthesizer[index].name;
     document.getElementById("div1" + index)?.appendChild(name);
-    //beschreibung
+    //BESCHREIBUNG
     let beschreibung = document.createElement("p");
     beschreibung.innerHTML = artikelSynthesizer[index].beschreibung;
     document.getElementById("div1" + index)?.appendChild(beschreibung);
@@ -44,11 +45,12 @@ for (let index = 0; index < artikelSynthesizer.length; index++) {
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div1" + index)?.appendChild(kaufen);
 }
-//WOMEN
+//Drummachines
 for (let index = 0; index < artikelDrummachines.length; index++) {
     //DIV
     let newDiv = document.createElement("div");
     newDiv.id = "div2" + index;
+    newDiv.className = "Produkt";
     document.getElementById("alldrums")?.appendChild(newDiv);
     //IMG
     let imgElement = document.createElement("img");

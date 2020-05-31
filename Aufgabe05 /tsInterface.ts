@@ -42,6 +42,7 @@ for (let index: number = 0; index < artikelSynthesizer.length; index++) {
     //DIV
     let newDiv: HTMLDivElement = document.createElement("div");
     newDiv.id = "div1" + index;
+    newDiv.className = "Produkt";
     document.getElementById("allsynth")?.appendChild(newDiv);
 
     //IMG
@@ -54,7 +55,7 @@ for (let index: number = 0; index < artikelSynthesizer.length; index++) {
     name.innerHTML = artikelSynthesizer[index].name;
     document.getElementById("div1" + index)?.appendChild(name);
 
-    //beschreibung
+    //BESCHREIBUNG
     let beschreibung: HTMLParagraphElement = document.createElement("p");
     beschreibung.innerHTML = artikelSynthesizer[index].beschreibung;
     document.getElementById("div1" + index)?.appendChild(beschreibung);
@@ -70,11 +71,12 @@ for (let index: number = 0; index < artikelSynthesizer.length; index++) {
     document.getElementById("div1" + index)?.appendChild(kaufen);
 }
 
-//WOMEN
+//Drummachines
 for (let index: number = 0; index < artikelDrummachines.length; index++) {
     //DIV
     let newDiv: HTMLDivElement = document.createElement("div");
     newDiv.id = "div2" + index;
+    newDiv.className = "Produkt";
     document.getElementById("alldrums")?.appendChild(newDiv);
 
     //IMG
