@@ -44,6 +44,7 @@ for (let index = 0; index < artikelSynthesizer.length; index++) {
     let kaufen = document.createElement("button");
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div1" + index)?.appendChild(kaufen);
+    kaufen.addEventListener("click", handleAddArticle);
 }
 //Drummachines
 for (let index = 0; index < artikelDrummachines.length; index++) {
@@ -104,12 +105,12 @@ function handleCategoryClick(_click) {
             break;
     }
     function synthesizer() {
-        document.getElementById("allsynth").style.display = "inline-grid";
+        document.getElementById("allsynth").style.display = "flex";
         document.getElementById("alldrums").style.display = "none";
     }
     function drummachines() {
-        document.getElementById("allsynth").style.display = "inline-grid";
-        document.getElementById("alldrums").style.display = "none";
+        document.getElementById("alldrums").style.display = "flex";
+        document.getElementById("allsynth").style.display = "none";
     }
 }
 let synthesizerAnzeigen = document.querySelector("#synthesizer");

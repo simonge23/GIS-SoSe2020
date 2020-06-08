@@ -69,6 +69,7 @@ for (let index: number = 0; index < artikelSynthesizer.length; index++) {
     let kaufen: HTMLButtonElement = document.createElement("button");
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div1" + index)?.appendChild(kaufen);
+    kaufen.addEventListener("click", handleAddArticle);
 }
 
 //Drummachines
@@ -142,14 +143,14 @@ function handleCategoryClick(this: HTMLDivElement, _click: MouseEvent): void {
 }
 
     function synthesizer(): void {
-    (<HTMLElement>document.getElementById("allsynth")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("allsynth")).style.display = "flex";
     (<HTMLElement>document.getElementById("alldrums")).style.display = "none";
 
 }
 
     function drummachines(): void {
-    (<HTMLElement>document.getElementById("allsynth")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("alldrums")).style.display = "none";
+    (<HTMLElement>document.getElementById("alldrums")).style.display = "flex";
+    (<HTMLElement>document.getElementById("allsynth")).style.display = "none";
    
     }
 }
@@ -159,6 +160,6 @@ synthesizerAnzeigen.addEventListener("click", handleCategoryClick.bind(synthesiz
 
 let drummachinesAnzeigen: HTMLDivElement = <HTMLDivElement>document.querySelector("#drummachines");
 drummachinesAnzeigen.addEventListener("click", handleCategoryClick.bind(drummachinesAnzeigen));
-   
+
 
 
