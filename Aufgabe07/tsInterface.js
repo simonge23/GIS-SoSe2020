@@ -45,7 +45,6 @@ for (let index = 0; index < artikelSynthesizer.length; index++) {
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div1" + index)?.appendChild(kaufen);
     kaufen.addEventListener("click", handleAddArticle);
-    kaufen.setAttribute("index", index.toString());
 }
 //Drummachines
 for (let index = 0; index < artikelDrummachines.length; index++) {
@@ -75,7 +74,6 @@ for (let index = 0; index < artikelDrummachines.length; index++) {
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div2" + index)?.appendChild(kaufen);
     kaufen.addEventListener("click", handleAddArticle);
-    kaufen.setAttribute("index", index.toString());
 }
 //EINKAUFSWAGEN
 let wagenCounter = 0;
