@@ -1,68 +1,69 @@
-//Interface Synthesizer
-interface ArtikelSynthesizer {
+//Interface Artikel 
+interface Artikel {
     img: string;
     name: string;
     beschreibung: string;
     preis: number;
+    kategorie: string;
 }
 
 //Artikel Synthesizer
-let artikel1: ArtikelSynthesizer = { img: "bassstation.jpg", name: "Novation Bassstation 2", beschreibung: "Analoger Mono-Synthesizer", preis: 399 };
-let artikel2: ArtikelSynthesizer = { img: "lead4.jpg", name: "Clavia Nord Lead 4", beschreibung: "Virtuell Analoger Performance-Synthesizer", preis: 1799 };
-let artikel3: ArtikelSynthesizer = { img: "matriarch.jpg", name: "Moog Matriarch", beschreibung: "4-stimmig Paraphoner Semi-Modularer Synthesizer", preis: 2199 };
-let artikel4: ArtikelSynthesizer = { img: "microkorg.jpg", name: "Korg Microkorg", beschreibung: "Analoger Modeling Synth/Vocoder", preis: 339 };
-let artikel5: ArtikelSynthesizer = { img: "minibrute.jpg", name: "Arturia Minibrute Bundle", beschreibung: "Analoger semi-modularer Synthesizer", preis: 815 };
-let artikel6: ArtikelSynthesizer = { img: "minilogue.jpg", name: "Korg Minilogue XD", beschreibung: "Hybrider Synthesizer", preis: 569 };
-
-
-//Artikel Synthesizer Array
-let artikelSynthesizer: ArtikelSynthesizer[] = [artikel1, artikel2, artikel3, artikel4, artikel5, artikel6];
-
-//Interface Drummachines
-interface ArtikelDrummachines {
-    img: string;
-    name: string;
-    beschreibung: string;
-    preis: number;
-}
+let artikel1: Artikel = { img: "bassstation.jpg", name: "Novation Bassstation 2", beschreibung: "Analoger Mono-Synthesizer", kategorie: "synth", preis: 399 };
+let artikel2: Artikel = { img: "lead4.jpg", name: "Clavia Nord Lead 4", beschreibung: "Virtuell Analoger Performance-Synthesizer", kategorie: "synth", preis: 1799 };
+let artikel3: Artikel = { img: "matriarch.jpg", name: "Moog Matriarch", beschreibung: "4-stimmig Paraphoner Semi-Modularer Synthesizer", kategorie: "synth", preis: 2199 };
+let artikel4: Artikel = { img: "microkorg.jpg", name: "Korg Microkorg", beschreibung: "Analoger Modeling Synth/Vocoder", kategorie: "synth", preis: 339 };
+let artikel5: Artikel = { img: "minibrute.jpg", name: "Arturia Minibrute Bundle", beschreibung: "Analoger semi-modularer Synthesizer", kategorie: "synth", preis: 815 };
+let artikel6: Artikel = { img: "minilogue.jpg", name: "Korg Minilogue XD", beschreibung: "Hybrider Synthesizer", kategorie: "synth", preis: 569 };
 
 //Artikel Drummachines
-let artikel7: ArtikelDrummachines = { img: "digitakt.jpg", name: "Elektron Digitakt", beschreibung: "Digital Drummachine", preis: 699 };
-let artikel8: ArtikelDrummachines = { img: "drumbrute.jpg", name: "Arturia Drumbrute", beschreibung: "Analog Drummachine", preis: 349 };
-let artikel9: ArtikelDrummachines = { img: "jomoxalphabase.jpg", name: "Jomox Alpha Base", beschreibung: "Analoger Drum Synthesizer", preis: 1.699 };
-let artikel10: ArtikelDrummachines = { img: "mc101.jpg", name: "Roland MC101", beschreibung: "Portable Groovebox", preis: 449 };
-let artikel11: ArtikelDrummachines = { img: "mfbtanzbär2.jpg", name: "MFB Tanzbär 2", beschreibung: "nalog / Digital Hybrid Drum Computer", preis: 979 };
-let artikel12: ArtikelDrummachines = { img: "rd8.jpg", name: "Behringer RD8", beschreibung: "Analoge Drummachine", preis: 319 };
+let artikel7: Artikel = { img: "digitakt.jpg", name: "Elektron Digitakt", beschreibung: "Digital Drummachine", kategorie: "drum", preis: 699 };
+let artikel8: Artikel = { img: "drumbrute.jpg", name: "Arturia Drumbrute", beschreibung: "Analog Drummachine", kategorie: "drum", preis: 349 };
+let artikel9: Artikel = { img: "jomoxalphabase.jpg", name: "Jomox Alpha Base", beschreibung: "Analoger Drum Synthesizer", kategorie: "drum", preis: 1.699 };
+let artikel10: Artikel = { img: "mc101.jpg", name: "Roland MC101", beschreibung: "Portable Groovebox", kategorie: "drum", preis: 449 };
+let artikel11: Artikel = { img: "mfbtanzbär2.jpg", name: "MFB Tanzbär 2", beschreibung: "nalog / Digital Hybrid Drum Computer", kategorie: "drum", preis: 979 };
+let artikel12: Artikel = { img: "rd8.jpg", name: "Behringer RD8", beschreibung: "Analoge Drummachine", kategorie: "drum", preis: 319 };
 
-//Artikel Drummachines Array
-let artikelDrummachines: ArtikelDrummachines[] = [artikel7, artikel8, artikel9, artikel10, artikel11, artikel12];
+//Artikel Array
+let artikelAll: Artikel[] = [artikel1, artikel2, artikel3, artikel4, artikel5, artikel6, artikel7, artikel8, artikel9, artikel10, artikel11, artikel12];
+loadArtikles();
 
-//Synthesizer
-for (let index: number = 0; index < artikelSynthesizer.length; index++) {
+function loadArtikles(): void {
+    for (let index: number = 0; index < artikelAll.length; index++) {
+    let setKategorie: string;
+    let flexKategorie: string;
+    if (artikelAll[index].kategorie == "synth") {
+            setKategorie = "divNr";
+            flexKategorie = "allsynth";
+        } else {
+            setKategorie = "divNr2";
+            flexKategorie = "alldrums";
+        }
     //DIV
     let newDiv: HTMLDivElement = document.createElement("div");
-    newDiv.id = "div1" + index;
-    newDiv.className = "Produkt";
-    document.getElementById("allsynth")?.appendChild(newDiv);
+    newDiv.id = setKategorie + index;
+    document.getElementById(flexKategorie)?.appendChild(newDiv);
+    newDiv.setAttribute("index", index.toString());
+
+    console.log(setKategorie, index);
 
     //IMG
     let imgElement: HTMLImageElement = document.createElement("img");
-    imgElement.src = artikelSynthesizer[index].img;
+    imgElement.src = artikelAll[index].img;
     document.getElementById("div1" + index)?.appendChild(imgElement);
 
     //NAME
     let name: HTMLParagraphElement = document.createElement("p");
-    name.innerHTML = artikelSynthesizer[index].name;
+    name.innerHTML = artikelAll[index].name;
     document.getElementById("div1" + index)?.appendChild(name);
 
     //BESCHREIBUNG
     let beschreibung: HTMLParagraphElement = document.createElement("p");
-    beschreibung.innerHTML = artikelSynthesizer[index].beschreibung;
+    beschreibung.innerHTML = artikelAll[index].beschreibung;
     document.getElementById("div1" + index)?.appendChild(beschreibung);
 
     //PREIS
     let price: HTMLParagraphElement = document.createElement("p");
-    price.innerHTML = artikelSynthesizer[index].preis + "€";
+    price.innerHTML = artikelAll[index].preis + "€";
     document.getElementById("div1" + index)?.appendChild(price);
 
     //BUY
@@ -70,45 +71,9 @@ for (let index: number = 0; index < artikelSynthesizer.length; index++) {
     kaufen.innerHTML = "Add to cart";
     document.getElementById("div1" + index)?.appendChild(kaufen);
     kaufen.addEventListener("click", handleAddArticle);
-    kaufen.setAttribute("index", index.toString());
+    //kaufen.setAttribute("index", index.toString());
+    }
 }
-
-//Drummachines
-for (let index: number = 0; index < artikelDrummachines.length; index++) {
-    //DIV
-    let newDiv: HTMLDivElement = document.createElement("div");
-    newDiv.id = "div2" + index;
-    newDiv.className = "Produkt";
-    document.getElementById("alldrums")?.appendChild(newDiv);
-
-    //IMG
-    let imgElement: HTMLImageElement = document.createElement("img");
-    imgElement.src = artikelDrummachines[index].img;
-    document.getElementById("div2" + index)?.appendChild(imgElement);
-
-    //NAME
-    let name: HTMLParagraphElement = document.createElement("p");
-    name.innerHTML = artikelDrummachines[index].name;
-    document.getElementById("div2" + index)?.appendChild(name);
-
-    //BESCHREIBUNG
-    let beschreibung: HTMLParagraphElement = document.createElement("p");
-    beschreibung.innerHTML = artikelDrummachines[index].beschreibung;
-    document.getElementById("div2" + index)?.appendChild(beschreibung);
-
-    //PREIS
-    let price: HTMLParagraphElement = document.createElement("p");
-    price.innerHTML = artikelDrummachines[index].preis + "€";
-    document.getElementById("div2" + index)?.appendChild(price);
-
-    //BUY
-    let kaufen: HTMLButtonElement = document.createElement("button");
-    kaufen.innerHTML = "Add to cart";
-    document.getElementById("div2" + index)?.appendChild(kaufen);
-    kaufen.addEventListener("click", handleAddArticle);
-    kaufen.setAttribute("index", index.toString());
-}
-
     //EINKAUFSWAGEN
 let wagenCounter: number = 0;
 let counterAnzeigen: HTMLParagraphElement = document.createElement("p");
@@ -127,9 +92,9 @@ function handleAddArticle(_event: Event): void {
         counterAnzeigen.innerHTML = "" + wagenCounter;
         document.getElementById("wagenKreis")?.appendChild(counterAnzeigen);
 
-        let indexButton: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("index")!;
+        let indexButton: string = (<HTMLElement>_event.currentTarget)?.getAttribute("index")!;
         let indexNr: number = parseInt(indexButton);
-        gesamtWert = gesamtWert + artikelSynthesizer[indexNr].preis + artikelDrummachines[indexNr].preis;
+        gesamtWert = gesamtWert + artikelAll[indexNr].preis;
         console.log(gesamtWert);
     }
 
