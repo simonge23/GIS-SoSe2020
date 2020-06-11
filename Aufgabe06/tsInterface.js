@@ -18,44 +18,43 @@ let artikelAll = [artikel1, artikel2, artikel3, artikel4, artikel5, artikel6, ar
 loadArtikles();
 function loadArtikles() {
     for (let index = 0; index < artikelAll.length; index++) {
-        let setKategorie;
+        let setDivNr;
         let flexKategorie;
         if (artikelAll[index].kategorie == "synth") {
-            setKategorie = "divNr";
             flexKategorie = "allsynth";
         }
         else {
-            setKategorie = "divNr2";
             flexKategorie = "alldrums";
         }
+        setDivNr = "divNr";
         //DIV
         let newDiv = document.createElement("div");
-        newDiv.id = setKategorie + index;
+        newDiv.id = setDivNr + index;
+        newDiv.className = "Produkt";
         document.getElementById(flexKategorie)?.appendChild(newDiv);
-        newDiv.setAttribute("index", index.toString());
-        console.log(setKategorie, index);
+        console.log(setDivNr, index);
         //IMG
         let imgElement = document.createElement("img");
         imgElement.src = artikelAll[index].img;
-        document.getElementById("div1" + index)?.appendChild(imgElement);
+        document.getElementById("divNr" + index)?.appendChild(imgElement);
         //NAME
         let name = document.createElement("p");
         name.innerHTML = artikelAll[index].name;
-        document.getElementById("div1" + index)?.appendChild(name);
+        document.getElementById("divNr" + index)?.appendChild(name);
         //BESCHREIBUNG
         let beschreibung = document.createElement("p");
         beschreibung.innerHTML = artikelAll[index].beschreibung;
-        document.getElementById("div1" + index)?.appendChild(beschreibung);
+        document.getElementById("divNr" + index)?.appendChild(beschreibung);
         //PREIS
-        let price = document.createElement("p");
-        price.innerHTML = artikelAll[index].preis + "€";
-        document.getElementById("div1" + index)?.appendChild(price);
+        let preis = document.createElement("p");
+        preis.innerHTML = artikelAll[index].preis + "€";
+        document.getElementById("divNr" + index)?.appendChild(preis);
         //BUY
         let kaufen = document.createElement("button");
         kaufen.innerHTML = "Add to cart";
-        document.getElementById("div1" + index)?.appendChild(kaufen);
+        document.getElementById("divNr" + index)?.appendChild(kaufen);
         kaufen.addEventListener("click", handleAddArticle);
-        //kaufen.setAttribute("index", index.toString());
+        kaufen.setAttribute("index", index.toString());
     }
 }
 //EINKAUFSWAGEN
