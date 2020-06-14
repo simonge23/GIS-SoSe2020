@@ -1,0 +1,86 @@
+[
+    {
+        "img": "bassstation.jpg",
+        "name": "Novation Bassstation 2",
+        "beschreibung": "Analoger Mono-Synthesizer",
+        "kategorie": "synth",
+        "preis": 399
+    },
+    {
+        "img": "lead4.jpg",
+        "name": "Clavia Nord Lead 4",
+        "beschreibung": "Virtuell Analoger Performance-Synthesizer",
+        "kategorie": "synth",
+        "preis": 1799
+    },
+    {
+        "img": "matriarch.jpg",
+        "name": "Moog Matriarch",
+        "beschreibung": "4-stimmig Paraphoner Semi-Modularer Synthesizer",
+        "kategorie": "synth",
+        "preis": 2199
+    },
+    {
+        "img": "microkorg.jpg",
+        "name": "Korg Microkorg",
+        "beschreibung": "Analoger Modeling Synth/Vocoder",
+        "kategorie": "synth",
+        "preis": 339
+    },
+    {
+        "img": "minibrute.jpg",
+        "name": "Arturia Minibrute Bundle",
+        "beschreibung": "Analoger semi-modularer Synthesizer",
+        "kategorie": "synth",
+        "preis": 815
+    },
+    {
+        "img": "minilogue.jpg",
+        "name": "Korg Minilogue XD",
+        "beschreibung": "Hybrider Synthesizer",
+        "kategorie": "synth",
+        "preis": 569
+    },
+    {
+        "img": "digitakt.jpg",
+        "name": "Elektron Digitakt",
+        "beschreibung": "Digital Drummachine",
+        "kategorie": "drum",
+        "preis": 699
+    },
+    {
+        "img": "drumbrute.jpg",
+        "name": "Arturia Drumbrute",
+        "beschreibung": "Analog Drummachine",
+        "kategorie": "drum",
+        "preis": 349
+    },
+    {
+        "img": "jomoxalphabase.jpg",
+        "name": "Jomox Alpha Base",
+        "beschreibung": "Analoger Drum Synthesizer",
+        "kategorie": "drum",
+        "preis": 1.699
+    },
+    {
+        "img": "mc101.jpg",
+        "name": "Roland MC101",
+        "beschreibung": "Portable Groovebox",
+        "kategorie": "drum",
+        "preis": 449
+    },
+    {
+        "img": "mfbtanzbär2.jpg",
+        "name": "MFB Tanzbär 2",
+        "beschreibung": "nalog / Digital Hybrid Drum Computer",
+        "kategorie": "drum",
+        "preis": 979
+    },
+    {
+        "img": "rd8.jpg",
+        "name": "Behringer RD8",
+        "beschreibung": "Analoge Drummachine",
+        "kategorie": "drum",
+        "preis": 319
+    }
+]
