@@ -13,7 +13,8 @@ namespace Produkte {
     let articles: Artikel[] = [];
 
     function init(_event: Event): void {  
-        communicate("artikel.json");
+        //communicate("http://127.0.0.1:5500/Aufgabe07/artikel.json");
+        communicate("");
         buildButtons();
     }
 
@@ -46,7 +47,6 @@ namespace Produkte {
             newDiv.id = setDivNr + index;
             newDiv.className = "Produkt";
             document.getElementById(flexKategorie)?.appendChild(newDiv);
-
             console.log(setDivNr, index);
 
             //IMG

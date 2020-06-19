@@ -4,7 +4,8 @@ var Produkte;
     window.addEventListener("load", init);
     let articles = [];
     function init(_event) {
-        communicate("artikel.json");
+        //communicate("http://127.0.0.1:5500/Aufgabe07/artikel.json");
+        communicate("");
         buildButtons();
     }
     async function communicate(_url) {
