@@ -14,7 +14,7 @@ namespace Produkte {
 
     function init(_event: Event): void {  
         //communicate("http://127.0.0.1:5500/Aufgabe07/artikel.json");
-        communicate("");
+        communicate("https://simonge23.github.io/GIS-SoSe2020/Aufgabe07/artikel.json");
         buildButtons();
     }
 
