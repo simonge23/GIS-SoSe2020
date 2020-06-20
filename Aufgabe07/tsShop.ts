@@ -1,7 +1,7 @@
 namespace Aufgabe7 {
     window.addEventListener("load", init);
 
-    async function init(_event: Event): Promise<any> {  
+    async function init(_event: Event): Promise<void> {  
         //communicate("http://127.0.0.1:5500/Aufgabe07/artikel.json");
         await communicate("https://simonge23.github.io/GIS-SoSe2020/Aufgabe07/artikel.json");
         loadArtikles(articles);
