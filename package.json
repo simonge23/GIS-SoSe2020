@@ -1,0 +1,21 @@
+{
+  "name": "gissose2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "start": "node Relativer/Pfad/Zu/Datei.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonge23/GIS-SoSe2020.git"
+  },
+  "author": "Simon Geiger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonge23/GIS-SoSe2020/issues"
+  },
+  "homepage": "https://github.com/simonge23/GIS-SoSe2020#readme"
+}
