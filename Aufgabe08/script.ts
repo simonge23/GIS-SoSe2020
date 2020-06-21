@@ -10,8 +10,13 @@ namespace Aufgabe08 {
         serverURL += "?" + query.toString();
 
         let response: Response = await fetch(serverURL);
-        let responseText: string = await response.text();
-        console.log(responseText);
+        //let responseText: string = await response.text();
+        //console.log(responseText);
+        for (let entry of formData) {
+            console.log(entry);
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+        }
     }
 
 }

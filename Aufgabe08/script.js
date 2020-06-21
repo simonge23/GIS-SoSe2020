@@ -10,8 +10,13 @@ var Aufgabe08;
         let query = new URLSearchParams(formData);
         serverURL += "?" + query.toString();
         let response = await fetch(serverURL);
-        let responseText = await response.text();
-        console.log(responseText);
+        //let responseText: string = await response.text();
+        //console.log(responseText);
+        for (let entry of formData) {
+            console.log(entry);
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+        }
     }
 })(Aufgabe08 || (Aufgabe08 = {}));
 //# sourceMappingURL=script.js.map
