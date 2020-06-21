@@ -1,6 +1,6 @@
 namespace Aufgabe08 {
     let formData: FormData;
-    let buttonAction: HTMLButtonElement = <HTMLButtonElement> document.getElementById("performAction");
+    let buttonAction: HTMLButtonElement = <HTMLButtonElement> document.getElementById("send");
     buttonAction.addEventListener("click", handleClick);
 
     async function handleClick(): Promise<void> {

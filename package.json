@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "start": "node Relativer/Pfad/Zu/Datei.js"
+    "start": "node Aufgabe08/server.js"
   },
   "repository": {
     "type": "git",
