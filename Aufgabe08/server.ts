@@ -1,6 +1,6 @@
 import * as Http from "http";
 
-export namespace A08Server {
+export namespace Aufgabe08 {
     //Konsolenausgabe Serverstart
     console.log("Starting server");
     //port Vairable erstellen und port zuweisen

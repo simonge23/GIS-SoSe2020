@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A08Server = void 0;
+exports.Aufgabe08 = void 0;
 const Http = require("http");
-var A08Server;
-(function (A08Server) {
+var Aufgabe08;
+(function (Aufgabe08) {
     //Konsolenausgabe Serverstart
     console.log("Starting server");
     //port Vairable erstellen und port zuweisen
@@ -34,5 +34,5 @@ var A08Server;
         //response ende
         _response.end();
     }
-})(A08Server = exports.A08Server || (exports.A08Server = {}));
+})(Aufgabe08 = exports.Aufgabe08 || (exports.Aufgabe08 = {}));
 //# sourceMappingURL=server.js.map
