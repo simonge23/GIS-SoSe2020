@@ -2,9 +2,9 @@
 var Aufgabe09;
 (function (Aufgabe09) {
     let formData;
-    let buttonActionHtml = document.getElementById("performActionHtml");
+    let buttonActionHtml = document.getElementById("machHtml");
     buttonActionHtml.addEventListener("click", handleClickHtml);
-    let buttonActionJson = document.getElementById("performActionJson");
+    let buttonActionJson = document.getElementById("machJson");
     buttonActionJson.addEventListener("click", handleClickJson);
     async function handleClickHtml() {
         formData = new FormData(document.forms[0]);
