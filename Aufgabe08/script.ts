@@ -9,7 +9,7 @@ namespace Aufgabe08 {
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         serverURL += "?" + query.toString();
 
-        let response: Response = await fetch(serverURL);
+        //let response: Response = await fetch(serverURL);
         //let responseText: string = await response.text();
         //console.log(responseText);
         for (let entry of formData) {
