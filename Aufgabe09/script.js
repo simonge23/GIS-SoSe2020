@@ -1,22 +1,33 @@
 "use strict";
-var Aufgabe08;
-(function (Aufgabe08) {
+var Aufgabe09;
+(function (Aufgabe09) {
     let formData;
-    let buttonAction = document.getElementById("send");
-    buttonAction.addEventListener("click", handleClick);
-    async function handleClick() {
+    let buttonActionHtml = document.getElementById("performActionHtml");
+    buttonActionHtml.addEventListener("click", handleClickHtml);
+    let buttonActionJson = document.getElementById("performActionJson");
+    buttonActionJson.addEventListener("click", handleClickJson);
+    async function handleClickHtml() {
         formData = new FormData(document.forms[0]);
         let serverURL = "https://gissose2020simon.herokuapp.com/";
+        serverURL += "/html";
+        // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         serverURL += "?" + query.toString();
-        //let response: Response = await fetch(serverURL);
-        //let responseText: string = await response.text();
-        //console.log(responseText);
-        for (let entry of formData) {
-            console.log(entry);
-            console.log("name: " + entry[0]);
-            console.log("value: " + entry[1]);
-        }
+        let response = await fetch(serverURL);
+        let responseText = await response.text();
+        let serverResponse = document.getElementById("serverResponse");
+        serverResponse.innerHTML = responseText;
     }
-})(Aufgabe08 || (Aufgabe08 = {}));
+    async function handleClickJson() {
+        formData = new FormData(document.forms[0]);
+        let serverURL = "https://gissose2020simon.herokuapp.com/";
+        serverURL += "/json";
+        // tslint:disable-next-line: no-any
+        let query = new URLSearchParams(formData);
+        serverURL += "?" + query.toString();
+        let response = await fetch(serverURL);
+        let responseText = await response.json();
+        console.log(responseText);
+    }
+})(Aufgabe09 || (Aufgabe09 = {}));
 //# sourceMappingURL=script.js.map
